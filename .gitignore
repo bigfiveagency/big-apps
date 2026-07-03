@@ -1,0 +1,8 @@
+# Temi commerciali ThemeForest (licenza — non ridistribuibili) e archivi pesanti
+temi/
+
+# macOS
+.DS_Store
+
+# Impostazioni locali Claude Code
+.claude/settings.local.json
