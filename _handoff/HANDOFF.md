@@ -25,13 +25,25 @@ Checkout: **Freemius**, prodotto **33359**, piani Pro annuali **69 / 129 / 199 �
 - Nome sito ancora "Bloggers Unite" → **da cambiare**
 - Tema attivo: **Quitox** (Theme_Pure, ThemeForest) — scelto dopo aver provato Softec. Gli zip dei temi sono in `temi/` (fuori dal repo, licenza commerciale) e sulla postazione principale in Dropbox.
 - Demo importato: **Home 1** con One Click Demo Import, completo (pagine, menu, kit Elementor, campi ACF).
-- Plugin attivi: Advanced Custom Fields Pro, Elementor, TP Core, Breadcrumb NavXT, Contact Form 7, Kirki, WP Classic Editor, One Click Demo Import.
+- Plugin attivi: Advanced Custom Fields Pro, Elementor, **Elementor Pro** (licenza collegata da Lorenzo), TP Core, Breadcrumb NavXT, Contact Form 7, Kirki, WP Classic Editor, One Click Demo Import.
+- **Permalink**: struttura `/%postname%/` (attivata il 3/7, prima erano "plain").
+
+### Architettura del sito (decisa il 3/7, già applicata)
+
+- **Front page** = pagina "Home 2" (id **4451**) → home generica vetrina plugin
+- **/bot-marley/** = pagina ex "Home 1" (id **4450**, rinominata "Bot Marley") → landing del plugin, contenuti demo ancora da sostituire
+- **/about/** = pagina "About" (id **81**) → about essenziale
+- **Main Menu** (id 13): Home, Bot Marley, About, Support (→ https://users.freemius.com/, da affinare con l'URL support specifico del prodotto Freemius)
+- Bottone header **Contact Us** → `/about/` (impostato via Customizer, setting Kirki `quitox_button_link`)
+- **Side info / hamburger desktop disattivato** (Customizer `quitox_side_hide` = false). Su mobile l'hamburger resta (è in un contenitore `d-lg-none`) e apre l'offcanvas col menu.
+- Link **Login** dell'header nascosto via CSS: è hardcoded a `login.html` nel template PHP del tema; per ricollegarlo (es. al portale Freemius) serve child theme o edit del tema quando ci sarà SSH.
 
 ### Fix applicate (non toccare)
 
-1. **Customizer → CSS aggiuntivo**: `.wow { visibility: visible !important; }`
-   L'init di WOW.js nel `main.js` del tema non parte: senza questa regola le sezioni con classe `.wow` (testimonial, accordion, CTA, feature cards) restano invisibili. Bug del tema, non del contenuto.
-2. **Main Menu** (id 13) ripulito da ~28 voci "(non valido)" residue del vecchio demo Softec.
+1. **Customizer → CSS aggiuntivo**:
+   - `.wow { visibility: visible !important; }` — l'init di WOW.js nel `main.js` del tema non parte: senza questa regola le sezioni con classe `.wow` (testimonial, accordion, CTA, feature cards) restano invisibili. Bug del tema, non del contenuto.
+   - `.tp-header__login { display: none !important; }` — nasconde il Login rotto (vedi sopra).
+2. **Main Menu** (id 13) ripulito da ~28 voci "(non valido)" residue del vecchio demo Softec, poi ricostruito con le 4 voci definitive.
 
 ### Problemi noti / todo tecnici
 
@@ -41,10 +53,13 @@ Checkout: **Freemius**, prodotto **33359**, piani Pro annuali **69 / 129 / 199 �
 
 ## Prossimi passi concordati
 
-1. Sostituire i contenuti demo con i contenuti Bot Marley (homepage vetrina, poi landing e docs)
+1. Sostituire i contenuti demo: home generica (4451, vetrina plugin), landing Bot Marley (4450), About (81)
 2. Cambiare nome sito, logo, palette
-3. Integrare il checkout Freemius (product 33359) nella pagina pricing
-4. Pulizia finale (cestino, menu footer, pagine demo inutilizzate)
+3. Integrare il checkout Freemius (product 33359) nella pagina pricing / landing
+4. Pagine legali: Privacy Policy (esiste demo), Terms; necessarie per vendere
+5. Pulizia finale (cestino 26 pagine, menu footer con voci invalide Softec, pagine demo inutilizzate: Home 3, Faq, Pricing, Project, Service, Team, ecc.)
+
+Nota Elementor: la landing 4450 è costruita interamente con widget TP Core del tema (tp-banner, services, app-area, tp-integration, tp-cta, tp-fact, tp-accordion-list). Strategia scelta: tenere i widget TP e sostituirne testi/immagini; usare Elementor Pro per Theme Builder/Form dove serve. L'editor Elementor è pilotabile via API JS (`$e`) dal browser.
 
 ## Testi pronti
 
