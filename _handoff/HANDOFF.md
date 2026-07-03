@@ -38,11 +38,23 @@ Checkout: **Freemius**, prodotto **33359**, piani Pro annuali **69 / 129 / 199 �
 - **Side info / hamburger desktop disattivato** (Customizer `quitox_side_hide` = false). Su mobile l'hamburger resta (è in un contenitore `d-lg-none`) e apre l'offcanvas col menu.
 - Link **Login** dell'header nascosto via CSS: è hardcoded a `login.html` nel template PHP del tema; per ricollegarlo (es. al portale Freemius) serve child theme o edit del tema quando ci sarà SSH.
 
+### Palette BigFive (applicata il 3/7)
+
+Colori brand: nero `#252427`, bianco, viola `#633F98` (primario), sabbia `#e1d2a3`, crema `#f9f6ed`, oro `#ebbe1e` (accento). Applicata su tre livelli:
+
+1. **Opzioni Kirki** (Customizer → colori tema — vincono sul CSS aggiuntivo): theme_color_1 `#633F98`, theme_color_2 `#ebbe1e`, theme_color_3 `#4F327A` (hover), body `#5E5A66`, footer bg `#252427`, breadcrumb bg `#f9f6ed`.
+2. **CSS aggiuntivo**: override delle restanti variabili `--tp-*` (pink/sky→sabbia, grey-2→crema, bordi caldi) + testo scuro sui bottoni oro.
+3. **Dati Elementor** della home 4451: sostituiti 12 colori hardcoded nei widget (i `*_color_b` sono default inerti dei gradienti, ignorarli).
+
+Fuori palette restano le **immagini demo** (blob hero blu/rosa su /bot-marley/, screenshot app, icone SVG): si risolvono sostituendo i contenuti.
+
 ### Fix applicate (non toccare)
 
 1. **Customizer → CSS aggiuntivo**:
    - `.wow { visibility: visible !important; }` — l'init di WOW.js nel `main.js` del tema non parte: senza questa regola le sezioni con classe `.wow` (testimonial, accordion, CTA, feature cards) restano invisibili. Bug del tema, non del contenuto.
    - `.tp-header__login { display: none !important; }` — nasconde il Login rotto (vedi sopra).
+   - `@media (min-width: 992px) { .tp-menu-bar { display: none !important; } }` — hamburger solo su mobile per tutti gli stili header (lo switch `quitox_side_hide` copre solo alcuni).
+   - `.breadcrumb__area { background-image: none !important; }` — via l'immagine demo azzurra dal breadcrumb.
 2. **Main Menu** (id 13) ripulito da ~28 voci "(non valido)" residue del vecchio demo Softec, poi ricostruito con le 4 voci definitive.
 
 ### Problemi noti / todo tecnici
