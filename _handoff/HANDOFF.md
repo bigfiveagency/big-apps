@@ -65,9 +65,20 @@ Fuori palette restano le **immagini demo** (blob hero blu/rosa su /bot-marley/, 
 - 26 pagine nel cestino (residui Softec) da svuotare prima del go-live.
 - Il widget testimonial di Quitox non verrà usato: ignorare eventuali suoi problemi, si eliminerà dalla pagina in Elementor.
 
+### Landing /bot-marley/ (contenuti veri applicati il 3/7)
+
+Pagina 4450 ristrutturata via Elementor con i testi da `_handoff/testi/PLUGIN_DESCRIPTION.md` (inglese):
+hero → 6 feature card (repeater `tp_service_list` del widget services) → sezione screenshot placeholder → "Index. Retrieve. Answer." → accordion "Your content, your rules" → integrazioni → **pricing** (sezione `tp-pricing` copiata dalla pagina demo Pricing 4455, anchor `#pricing`: Pro 1/3/15 siti a 69/129/199€) → CTA "Try Bot Marley on your site" → stats (15 lingue, 24/7, 30 giorni) → FAQ (5 domande dal readme).
+
+Da completare sulla landing:
+- **Screenshot**: sezione "See Bot Marley in action" ha 3 widget immagine vuoti da riempire (Lorenzo) + le immagini demo di hero/accordion/app-area sono ulteriori slot naturali.
+- **Bottoni "Get Pro"**: puntano a `#` — da collegare al checkout Freemius (prodotto 33359, servono gli URL/plan-id dal dashboard Freemius).
+- Icone card pricing e icone integrazioni = ancora demo.
+- Quirk widget scoperti: il counter `tp-fact` non renderizza il numero "0"; il bottone del widget `tp-cta` (layout-1) non renderizza mai — il bottone è stato messo come `<a class="tp-btn-blue">` dentro la descrizione. Il typo del tema `tp_accordion_content_desctiption` è la chiave giusta dei repeater accordion.
+
 ## Prossimi passi concordati
 
-1. Sostituire i contenuti demo: home generica (4451, vetrina plugin), landing Bot Marley (4450), About (81)
+1. Sostituire i contenuti demo: home generica (4451, vetrina plugin), ~~landing Bot Marley (4450)~~ ✔ fatta (v. sopra), About (81)
 2. Cambiare nome sito, logo, palette
 3. Integrare il checkout Freemius (product 33359) nella pagina pricing / landing
 4. Pagine legali: Privacy Policy (esiste demo), Terms; necessarie per vendere
