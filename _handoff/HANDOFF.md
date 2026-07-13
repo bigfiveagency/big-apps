@@ -76,9 +76,25 @@ Da completare sulla landing:
 - Icone card pricing e icone integrazioni = ancora demo.
 - Quirk widget scoperti: il counter `tp-fact` non renderizza il numero "0"; il bottone del widget `tp-cta` (layout-1) non renderizza mai — il bottone è stato messo come `<a class="tp-btn-blue">` dentro la descrizione. Il typo del tema `tp_accordion_content_desctiption` è la chiave giusta dei repeater accordion.
 
+### Homepage / front page (4451 "Home 2") — contenuti applicati il 14/7
+
+Vetrina rifatta con focus Bot Marley + BigFive in generale, riprendendo tono e contenuti da bigfive.it/en/services e /en/about-us. Struttura finale (6 sezioni, ridotta da 10):
+1. **Hero** (tp-banner) — "Premium WordPress plugins, built by BigFive ✨" + sottotitolo con link "Discover Bot Marley →". Rimossi i badge App Store/Google Play demo (svuotato `list_2`) e cambiato `tp_des`.
+2. **Brand strip** (tp-brand) — tagline "From 2012 · 9 international awards · 100+ websites live". ⚠️ i loghi (Spotify/Slack/Zoom/Dropbox) sono ancora demo.
+3. **Bot Marley spotlight** (tp-cta) — "Meet Bot Marley" + bottone "Explore Bot Marley" → /bot-marley/.
+4. **What we build** (features, 3 card) — Custom WordPress plugins / Websites & e-commerce / AI & digital solutions. Section id `services` (ancora `#services` dall'hero btn2, ora non più usato). ⚠️ icone card ancora demo.
+5. **About BigFive** (about) — "A lightweight agency, big results" + 4 punti chiave in HTML nella descrizione + bottone "About BigFive" → /about/.
+6. **Final CTA** (tp-cta) — "Let's build something together" + "Get in touch" → /about/.
+
+Rimosse dalla home: pricing, app-badge area, testimonial, FAQ (non pertinenti/senza contenuti reali).
+
+Quirk confermati: il bottone nativo dei widget `tp-cta` e la lista/badge del widget `about` non renderizzano nel layout usato → bottoni messi come `<a class="tp-btn-blue">` e punti chiave come HTML dentro le descrizioni (i campi description del tema accettano HTML).
+
+⚠️ **Footer ancora demo** (appare su tutte le pagine): colonne Services/What We Do/Other Pages con link Customization/Design/…, blocco "Ready To Download" con badge app-store, logo Quitox. Da ripulire (widget/opzioni footer del tema).
+
 ## Prossimi passi concordati
 
-1. Sostituire i contenuti demo: home generica (4451, vetrina plugin), ~~landing Bot Marley (4450)~~ ✔ fatta (v. sopra), About (81)
+1. Sostituire i contenuti demo: ~~home generica (4451)~~ ✔ fatta, ~~landing Bot Marley (4450)~~ ✔ fatta, ~~About (81)~~ contenuti in gran parte demo del tema — da rivedere
 2. Cambiare nome sito, logo, palette
 3. Integrare il checkout Freemius (product 33359) nella pagina pricing / landing
 4. Pagine legali: Privacy Policy (esiste demo), Terms; necessarie per vendere
