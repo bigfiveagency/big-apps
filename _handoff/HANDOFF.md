@@ -70,6 +70,8 @@ Fuori palette restano le **immagini demo** (blob hero blu/rosa su /bot-marley/, 
 Pagina 4450 ristrutturata via Elementor con i testi da `_handoff/testi/PLUGIN_DESCRIPTION.md` (inglese):
 hero → 6 feature card (repeater `tp_service_list` del widget services) → sezione screenshot placeholder → "Index. Retrieve. Answer." → accordion "Your content, your rules" → integrazioni → **pricing** (sezione `tp-pricing` copiata dalla pagina demo Pricing 4455, anchor `#pricing`: Pro 1/3/15 siti a 69/129/199€) → CTA "Try Bot Marley on your site" → stats (15 lingue, 24/7, 30 giorni) → FAQ (5 domande dal readme).
 
+Sotto i prezzi c'è una sezione **"Support & Customer Portal"** (heading + text + button Elementor nativi) con bottone viola "Go to the customer portal" → https://customers.freemius.com/store/17612 (aggiunta il 14/7).
+
 Da completare sulla landing:
 - **Screenshot**: sezione "See Bot Marley in action" ha 3 widget immagine vuoti da riempire (Lorenzo) + le immagini demo di hero/accordion/app-area sono ulteriori slot naturali.
 - **Bottoni "Get Pro"**: puntano a `#` — da collegare al checkout Freemius (prodotto 33359, servono gli URL/plan-id dal dashboard Freemius).
