@@ -92,9 +92,26 @@ Quirk confermati: il bottone nativo dei widget `tp-cta` e la lista/badge del wid
 
 ⚠️ **Footer ancora demo** (appare su tutte le pagine): colonne Services/What We Do/Other Pages con link Customization/Design/…, blocco "Ready To Download" con badge app-store, logo Quitox. Da ripulire (widget/opzioni footer del tema).
 
+### Pagina /about/ (81) — contenuti applicati il 14/7
+
+Rifatta con focus su BigFive agenzia + tutti i servizi (contenuti da bigfive.it/en/about-us e /en/services). Struttura finale (4 sezioni, ridotta da 6):
+1. **Intro** (widget `about`, layout-3) — "A lightweight agency, big results", badge "14 Years of projects", storia BigFive (dal 2012, Monza, team full-remote, Lorenzo creative director), checklist (One partner / Zero templates / 9 awards / 100+ siti), bottone "Our services" → #services. ⚠️ Mapping campi layout-3 non intuitivo: titolo=`tp_ex_title`, badge grande=`experience_title`, corpo=`tp_ex_des`, label=`experience_subtitle`, checklist=`tp_list_list`.
+2. **Servizi** (widget `features`) — griglia con **tutti i 15 servizi** BigFive. Reso griglia cambiando `tp_design_style` da `layout-3` (slider) a `layout-1` (grid statica). Section id `services`. ⚠️ icone tutte uguali (demo, clonate dal template).
+3. **Stats** (tp-fact) — 14 anni / 9 awards / 100+ siti / 15 servizi.
+4. **FAQ + CTA finale** (accordion + tp-cta) — 5 FAQ agenzia + "Let's talk about your project" con bottone "Get in touch" → https://bigfive.it/en/ (in attesa di una pagina contatti dedicata).
+Rimosse: pricing, team (senza dati/foto reali).
+
+### Footer — pulito il 14/7
+
+Il footer è fatto con **widget classici** in "Footer Style 2 : 1-4" (Aspetto → Widget). Ora:
+- **Col1 "Product"** (widget-45, nav_menu id 16 "What We Do" ripurposato): Bot Marley, Support → users.freemius.com. Sotto, un Custom HTML (widget-46) con frase BigFive (prima erano i badge App Store/Google Play demo).
+- **Col2 "Company"** (widget-47, nav_menu id 14 "Other Pages" ripurposato): Home, About.
+- Rimossi i widget nav_menu extra (48, 49) e il blocco "Ready To Download".
+- ⚠️ Restano demo: **logo "Quitox"** (header+footer, serve file logo BigFive) e **icone social** che puntano a `#` (servono URL reali). I menu WordPress "What We Do"(16) e "Other Pages"(14) sono stati riusati come Product/Company: se servono altrove, ricordarlo.
+
 ## Prossimi passi concordati
 
-1. Sostituire i contenuti demo: ~~home generica (4451)~~ ✔ fatta, ~~landing Bot Marley (4450)~~ ✔ fatta, ~~About (81)~~ contenuti in gran parte demo del tema — da rivedere
+1. Sostituire i contenuti demo: ~~home generica (4451)~~ ✔, ~~landing Bot Marley (4450)~~ ✔, ~~About (81)~~ ✔ (v. sotto)
 2. Cambiare nome sito, logo, palette
 3. Integrare il checkout Freemius (product 33359) nella pagina pricing / landing
 4. Pagine legali: Privacy Policy (esiste demo), Terms; necessarie per vendere
