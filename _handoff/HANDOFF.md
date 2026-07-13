@@ -44,9 +44,11 @@ Colori brand: nero `#252427`, bianco, viola `#633F98` (primario), sabbia `#e1d2a
 
 1. **Opzioni Kirki** (Customizer → colori tema — vincono sul CSS aggiuntivo): theme_color_1 `#633F98`, theme_color_2 `#ebbe1e`, theme_color_3 `#4F327A` (hover), body `#5E5A66`, footer bg `#252427`, breadcrumb bg `#f9f6ed`.
 2. **CSS aggiuntivo**: override delle restanti variabili `--tp-*` (pink/sky→sabbia, grey-2→crema, bordi caldi) + testo scuro sui bottoni oro.
-3. **Dati Elementor** della home 4451: sostituiti 12 colori hardcoded nei widget (i `*_color_b` sono default inerti dei gradienti, ignorarli).
+3. **Dati Elementor**: sostituiti i colori hardcoded nei widget di home 4451 (12) e About 81 (15); Bot Marley 4450 non ne aveva (i `*_color_b` sono default inerti dei gradienti, ignorarli).
 
-Fuori palette restano le **immagini demo** (blob hero blu/rosa su /bot-marley/, screenshot app, icone SVG): si risolvono sostituendo i contenuti.
+Secondo giro di verifica (audit dei colori computati su tutte le pagine → pulito): footer social e bordo in palette via CSS, testo verticale hero in lavanda, **topbar disattivata** (`quitox_topbar_switch` = false — conteneva telefono e "now hiring" demo; riattivarla solo con contatti veri).
+
+Fuori palette restano le **immagini demo** (blob hero blu/rosa su /bot-marley/, screenshot app, icone SVG): si risolvono sostituendo i contenuti. Anche **logo Quitox** e **titolo sito "Bloggers Unite"** (appare nei breadcrumb) sono ancora da sostituire — serve decisione di Lorenzo sul nome.
 
 ### Fix applicate (non toccare)
 
