@@ -88,7 +88,9 @@ Vetrina rifatta con focus Bot Marley + BigFive in generale, riprendendo tono e c
 3. **Bot Marley spotlight** (tp-cta) — "Meet Bot Marley" + bottone "Explore Bot Marley" → /bot-marley/.
 4. **What we build** (features, 3 card) — Custom WordPress plugins / Websites & e-commerce / AI & digital solutions. Section id `services` (ancora `#services` dall'hero btn2, ora non più usato). ⚠️ icone card ancora demo.
 5. **About BigFive** (about) — "A lightweight agency, big results" + 4 punti chiave in HTML nella descrizione + bottone "About BigFive" → /about/.
-6. **Final CTA** (tp-cta) — "Let's build something together" + "Get in touch" → /about/.
+6. **Final CTA** (tp-cta, widget `e8c0a14`, sezione `cb4d84d`) — "Let's build something together" + "Get in touch" → /about/. Restylata il 14/7 via CSS scoped: sfondo **giallo** (`.tp-cta__wrapper-2`), titolo **viola**, testo **nero**, bottone **grigio scuro #252427 testo bianco** (`.tp-btn-sky`), + `margin-bottom:90px` per staccarla dal footer.
+
+Header: il bottone Kirki è ora **BUY PRO** (`quitox_button_text`) → `/bot-marley/#pricing` (`quitox_button_link`).
 
 Rimosse dalla home: pricing, app-badge area, testimonial, FAQ (non pertinenti/senza contenuti reali).
 
