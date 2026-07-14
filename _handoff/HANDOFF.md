@@ -137,6 +137,7 @@ Guida utente pubblica per chi usa il plugin. **Ricostruita in Elementor** (14/7)
 - Stile via CSS scopato per **ID pagina** (`.page-id-4637 ...`) — NB: i `_css_classes` impostati via API su sezioni/colonne NON si applicano, quindi usare page-id. Titoli macro **viola**, resto **grigio**, tabelle/blockquote stilizzati.
 - Anchor offset per l'header fisso: `.page-id-4637 [id^=elementor-toc__heading-anchor]{scroll-margin-top:150px}`. Aggiunto anche `html{scroll-behavior:auto}` globale (lo smooth-scroll del tema bloccava lo scroll programmatico).
 - In menu come ultima voce **Documentation** → /documentation/.
+- Ancore con **slug parlanti** (ID leggibili sui widget Heading, usati anche dall'indice): `#welcome #requirements #quick-start #connect-ai #knowledge #widget #behaviour #leads #languages #woocommerce #settings #statistics #privacy #troubleshooting` — linkabili nei ticket (es. `/documentation/#knowledge`). I titoli non hanno più il numero (lo mette l'indice) per evitare la doppia numerazione.
 
 ## Prossimi passi concordati
 
