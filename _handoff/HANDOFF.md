@@ -74,7 +74,9 @@ hero → 6 feature card (repeater `tp_service_list` del widget services) → sez
 
 Sotto i prezzi c'è una sezione **"Support & Customer Portal"** (heading + text + button Elementor nativi) con bottone viola "Go to the customer portal" → https://customers.freemius.com/store/17612 (aggiunta il 14/7).
 
-**Blocco confronto "Other chatbots vs Bot Marley"** (14/7): sezione con un widget `html` (tabella comparativa in HTML+CSS inline, prefisso classi `.bmcmp`, palette brand — colonna Bot Marley viola con ✓ oro, "other chatbots" spenta con ✕). Inserita **prima della sezione pricing** (indice 7). 8 righe: privacy, GDPR/compliance, pricing (no crediti a consumo), AI provider (pieno controllo), accuratezza/no allucinazioni, WordPress nativo, setup senza chiavi extra, lingue. Per editarla: aprire l'editor Elementor e modificare il widget HTML (o rigenerare la stringa).
+**Blocco confronto "Other chatbots vs Bot Marley"** (14/7): sezione con un widget `html` (id `a608c3e`, tabella comparativa in HTML+CSS inline, prefisso classi `.bmcmp`, palette brand — colonna Bot Marley viola con ✓ oro, "other chatbots" spenta con ✕). Inserita **prima della sezione pricing** (indice 7). 8 righe: privacy, GDPR/compliance, pricing, AI provider, accuratezza, WordPress nativo, setup, lingue. Per editarla: editor Elementor → widget HTML.
+
+⚠️ **Compliance framing** (corretto il 14/7 dopo dubbio di Lorenzo): NON affermare "i dati non lasciano la UE / nothing leaves your site" — falso, perché contenuti+query vanno al provider AI (spesso USA) per embedding e risposte. Le claim vere: storage locale (DB WordPress), nessun intermediario SaaS, e compliance *ottenibile scegliendo un provider EU + DPA diretto*. Vale per il blocco confronto E la card "Self-hosted & private".
 
 Da completare sulla landing:
 - **Screenshot**: sezione "See Bot Marley in action" ha 3 widget immagine vuoti da riempire (Lorenzo) + le immagini demo di hero/accordion/app-area sono ulteriori slot naturali.
