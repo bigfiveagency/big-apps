@@ -57,7 +57,8 @@ Fuori palette restano le **immagini demo** (blob hero blu/rosa su /bot-marley/, 
    - `.tp-header__login { display: none !important; }` — nasconde il Login rotto (vedi sopra).
    - `@media (min-width: 992px) { .tp-menu-bar { display: none !important; } }` — hamburger solo su mobile per tutti gli stili header (lo switch `quitox_side_hide` copre solo alcuni).
    - `.breadcrumb__area { background-image: none !important; }` — via l'immagine demo azzurra dal breadcrumb.
-2. **Main Menu** (id 13) ripulito da ~28 voci "(non valido)" residue del vecchio demo Softec, poi ricostruito con le 4 voci definitive.
+2. **Main Menu** (id 13) ripulito da ~28 voci "(non valido)" residue del vecchio demo Softec, poi ricostruito con le 4 voci definitive. Voce **Support** → https://customers.freemius.com/store/17612.
+3. **Header sempre fisso viola** (14/7, tutto via CSS aggiuntivo): `#header-sticky` → `position:fixed; background:#633F98`, testo menu bianco, logo reso bianco con `filter:brightness(0) invert(1)` (temporaneo, finché non c'è il logo BigFive), hamburger bianco su mobile, CONTACT US resta gold. Compensato con `body{padding-top:101px}` (133px con admin-bar). **Breadcrumb eliminata** ovunque (`.breadcrumb__area{display:none}`) — il titolo pagina ora è dato dal contenuto Elementor di ciascuna pagina.
 
 ### Problemi noti / todo tecnici
 
