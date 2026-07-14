@@ -74,6 +74,10 @@ hero → 6 feature card (repeater `tp_service_list` del widget services) → sez
 
 Sotto i prezzi c'è una sezione **"Support & Customer Portal"** (heading + text + button Elementor nativi) con bottone viola "Go to the customer portal" → https://customers.freemius.com/store/17612 (aggiunta il 14/7).
 
+**Griglia feature "Everything you need"** (widget `services` id `7d931f5`, sezione 1): 8 card a **4 per riga** (CSS `@media(min-width:992px){.elementor-element-7d931f5 [class*=col-xl-4]{flex:0 0 25%;max-width:25%}}` nel Customizer). Card: No hallucinations, Self-hosted & private, Any AI provider (con "unlimited conversations" mergiata dentro), Fully customizable, Behaviour & languages, Lead capture, Auto-sync knowledge, Works everywhere. Icone ancora demo.
+
+**Sezione WooCommerce** (widget `html`, id `a09b82c`, prefisso `.bmwoo`, card viola con badge "WooCommerce · Pro"): claim "Turn conversations into revenue" + 3 vantaggi (push prodotti, coupon contestuali, statistiche ricavi). Inserita **prima del confronto** (indice 6).
+
 **Blocco confronto "Other chatbots vs Bot Marley"** (14/7): sezione con un widget `html` (id `a608c3e`, tabella comparativa in HTML+CSS inline, prefisso classi `.bmcmp`, palette brand — colonna Bot Marley viola con ✓ oro, "other chatbots" spenta con ✕). Inserita **prima della sezione pricing** (indice 7). 8 righe: privacy, GDPR/compliance, pricing, AI provider, accuratezza, WordPress nativo, setup, lingue. Per editarla: editor Elementor → widget HTML.
 
 ⚠️ **Compliance framing** (corretto il 14/7 dopo dubbio di Lorenzo): NON affermare "i dati non lasciano la UE / nothing leaves your site" — falso, perché contenuti+query vanno al provider AI (spesso USA) per embedding e risposte. Le claim vere: storage locale (DB WordPress), nessun intermediario SaaS, e compliance *ottenibile scegliendo un provider EU + DPA diretto*. Vale per il blocco confronto E la card "Self-hosted & private".
