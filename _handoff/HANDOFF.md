@@ -156,3 +156,5 @@ In `_handoff/testi/`:
 - `readme.txt` — readme WordPress.org in formato classico (v0.2.0, più vecchio: usare come riferimento di tono, non di contenuto).
 
 Originali sulla postazione principale: `~/Dropbox/CLAUDE/chatbot/Bot Marley/` (repo git separato del plugin).
+
+- **FAQ Bot Marley (4450, widget tp-accordion-list #f7aa94b, repeater `accordions`)**: 14/7 ampliata da 5 a 13 domande. Nuove: provider AI, free plan, tempo setup, performance, privacy (framing corretto), PDF/documenti, lead, WooCommerce. Ordine tematico, "renew Pro" resta ultima.
