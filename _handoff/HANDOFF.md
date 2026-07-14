@@ -129,6 +129,15 @@ Il footer è fatto con **widget classici** in "Footer Style 2 : 1-4" (Aspetto �
 - Rimossi i widget nav_menu extra (48, 49) e il blocco "Ready To Download".
 - ⚠️ Restano demo: **logo "Quitox"** (header+footer, serve file logo BigFive) e **icone social** che puntano a `#` (servono URL reali). I menu WordPress "What We Do"(16) e "Other Pages"(14) sono stati riusati come Product/Company: se servono altrove, ricordarlo.
 
+### Pagina Documentation (/documentation/, id 4637)
+
+Guida utente pubblica per chi usa il plugin. **Ricostruita in Elementor** (14/7) con blocchi editabili — così è modificabile visivamente in Elementor.
+- Contenuto = **nuova guida utente** (taglio da guida, per orientare l'utente ed evitare ticket di supporto), non più la doc interna. Sorgente: `_handoff/testi/Bot-Marley-User-Guide.md` (e `chatbot/Documentation/Bot-Marley-User-Guide.md`).
+- Struttura: sezione titolo + sezione a 2 colonne → **col sinistra (30%) sticky con widget "Table of Contents" di Elementor Pro** (indice auto-generato dagli H2) + **col destra (70%) con Heading (H2) + Text Editor per ogni sezione**.
+- Stile via CSS scopato per **ID pagina** (`.page-id-4637 ...`) — NB: i `_css_classes` impostati via API su sezioni/colonne NON si applicano, quindi usare page-id. Titoli macro **viola**, resto **grigio**, tabelle/blockquote stilizzati.
+- Anchor offset per l'header fisso: `.page-id-4637 [id^=elementor-toc__heading-anchor]{scroll-margin-top:150px}`. Aggiunto anche `html{scroll-behavior:auto}` globale (lo smooth-scroll del tema bloccava lo scroll programmatico).
+- In menu come ultima voce **Documentation** → /documentation/.
+
 ## Prossimi passi concordati
 
 1. Sostituire i contenuti demo: ~~home generica (4451)~~ ✔, ~~landing Bot Marley (4450)~~ ✔, ~~About (81)~~ ✔ (v. sotto)
