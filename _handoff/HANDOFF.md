@@ -158,3 +158,5 @@ In `_handoff/testi/`:
 Originali sulla postazione principale: `~/Dropbox/CLAUDE/chatbot/Bot Marley/` (repo git separato del plugin).
 
 - **FAQ Bot Marley (4450, widget tp-accordion-list #f7aa94b, repeater `accordions`)**: 14/7 ampliata da 5 a 13 domande. Nuove: provider AI, free plan, tempo setup, performance, privacy (framing corretto), PDF/documenti, lead, WooCommerce. Ordine tematico, "renew Pro" resta ultima.
+
+- **About (81) — FAQ + CTA (15/7)**: FAQ (widget tp-accordion-list #e748eb6) ampliata da 5 a 11 domande (durata progetto, costo, supporto post-lancio, presa in carico progetti esistenti, design/branding, AI). Il vecchio CTA "Get in touch" (#17d14d6, era layout-4 con <a> dentro la descrizione) sistemato: convertito a **layout-3 giallo** come il blocco home, **spostato in una sezione full-width propria (a7bf8e1) sotto le FAQ** (prima era nella stessa colonna e si accavallava). Bottone nativo Get in touch -> https://bigfive.it/en/ (nuova scheda). Colori via Customizer CSS scoped `.elementor-element-17d14d6` (sfondo #ebbe1e, titolo #633F98, testo/bottone #252427, marker `/* about-cta-yellow */`).
